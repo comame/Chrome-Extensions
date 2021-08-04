@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "radiko play",
+    "version": "1",
+
+    "host_permissions": [
+        "https://radiko.jp/*"
+    ],
+
+    "content_scripts": [{
+        "matches": ["https://radiko.jp/*"],
+        "js": ["script.js"],
+        "run_at": "document_start"
+    }]
+}

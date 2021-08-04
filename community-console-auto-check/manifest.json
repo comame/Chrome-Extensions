@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Community Console Auto Check",
+    "version": "1",
+
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+
+    "host_permissions": [
+        "https://support.google.com/s/community/*"
+    ],
+
+    "action": {
+        "default_title": "Community Console Auto Check"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    }
+}

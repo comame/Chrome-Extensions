@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Waseda Moodle Auto Sign",
+    "version": "1",
+
+    "host_permissions": [
+        "https://wsdmoodle.waseda.jp/login/index.php"
+    ],
+
+    "content_scripts": [{
+        "matches": ["https://wsdmoodle.waseda.jp/login/index.php"],
+        "js": ["script.js"],
+        "run_at": "document_start"
+    }]
+}
